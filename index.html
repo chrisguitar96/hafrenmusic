@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HAFREN</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="hafren-styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+        <script defer src="hafren-javascript.js"></script> 
+    </head>
+
+    <body>
+        <div class="navbar hidden">
+            <img src="images/logo.png" alt="logo" class="logo" id="logo">
+            <ul class="menu">
+                <li class="nav-link"><a onclick="scrollToSection('explore')" >Explore</a></li>
+                <li class="nav-link"><a onclick="scrollToSection('events')" >Events</a></li>
+                <li class="nav-link"><a onclick="scrollToSection('watch')" >Watch</a></li>
+                <li class="nav-link"><a onclick="scrollToSection('mailing-list')" >Newsletter</a></li>
+                <li class="nav-link"><a onclick="scrollToSection('contact')" >Contact</a></li>
+            </ul>
+            <div class="hamb">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+
+        <div class="header">
+            <img src="images/ex-home-two.jpg">
+            
+            <div class="header-filter">
+                <h1 class="hidden">Hafren</h1>
+                <h4 class="hidden">Exploring boundaries, crossing borders</h4>
+            </div>
+            <div onclick="scrollToSection('explore')" class="explore-button">
+                <button class="exp-button-text" onclick="scrollToSection('explore')" type="button">Explore</button>
+                <button class="exp-arrow" onclick="scrollToSection('explore')" type="button">↓</button>  
+            </div>
+        </div>
+        <main>
+            <section class="explore" id="explore">
+                <div class="welcome">
+                    <img class="hidden" src="images/logo-black.png" alt="logo-black">
+                    <h2 class="hidden">Croeso / Welcome</h2>
+                    <p class="hidden"><i>Afon Hafren (River Severn).</i> This ancient border between Wales and England, a place where the spiritual and mortal worlds meet, now lends its name to the creative world of guitarist-composer Chris Roberts. Hafren is an interdisciplinary artistic universe that explores extremes of genre and crossovers between artforms.</p>
+                </div>
+                <div class="grid">
+                    <div class="exp-container hidden">
+                        <h3>Solo</h3>
+                        <div class="exp-tile">
+                            <img src="images/explore-1.jpg" alt="image one">
+                            <div class="exp-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  tem</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  tem</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exp-container hidden">
+                        <h3>Mailing List</h3>
+                        <div class="exp-tile" onclick="scrollToSection('mailing-list')">
+                            <img src="images/explore-2.jpg" alt="image one">
+                            <div class="exp-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  tem</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  tem</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exp-container hidden">
+                        <h3>Filkin's Music</h3>
+                        <div class="exp-tile">
+                            <img src="images/explore-3.jpg" alt="image one">
+                            <div class="exp-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  tem</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  tem</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exp-container hidden">
+                        <h3>Sustainable Touring</h3>
+                        <div class="exp-tile">
+                            <img src="images/explore-4.jpg" alt="image one">
+                            <div class="exp-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  tem</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  tem</p>
+                            </div>
+                        </div>
+                    </div>        
+
+                </div>
+            </section><!--END OF EXPLORE SECTION-->
+              
+            <div id="watch" class="divider">
+                <div class="divider-header hidden">
+                    <video playsinline autoplay muted loop>
+                        <source src="images/watch.mp4" type="video/webm">
+                    </video>
+                    <div class="divider-title">
+                        <h2>Watch</h2>
+                    </div>
+                </div>
+            </div>
+            <section class="watch">
+                <div class="videos hidden">
+                        <iframe src="https://www.youtube.com/embed/pCiYs1IvNhI?si=ftDNwBclhgGUQojW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/12LpnFKuitg?si=U2EtqFvHY21wflCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video-text">
+                    <p class="hidden">Some text about some really rather lovely videos that you can watch.</p>
+                    <h2 class="hidden">Some Lovely Videos</h2>
+                    <p class="hidden">Some text about some really rather lovely videos that you can watch.</p>
+                </div>
+            </section><!--END OF WATCH SECTION-->    
+
+            <div id="mailing-list" class="divider hidden" >
+                <div class="divider-header hidden">
+                    <img src="images/mailing-list.jpg">
+                    <div class="divider-title">
+                        <h2>Newsletter</h2>
+                    </div>
+                </div>
+            </div>
+            <section id="mailing-list" class="mailing-list">
+                <div class="mail-text">
+                    <h2>Join the Community</h2>
+                    <p>Newsletter subscribers get early-bird gig tickets as well as fortnightly book and music recommendations.</p>
+                    <img src="images/logo-colour.png">
+                </div>
+                <div class="mail-form">
+                    <p>Enter your email address below to join our Substack:</p>
+                    <div id="custom-substack-embed"></div>
+                    <script>
+                    window.CustomSubstackWidget = {
+                        substackUrl: "hafren.substack.com",
+                        placeholder: "example@gmail.com",
+                        buttonText: "Subscribe",
+                        theme: "custom",
+                        colors: {
+                        primary: "#000000",
+                        input: "#FFFFFF",
+                        email: "#000000",
+                        text: "#FFFFFF",
+                        },
+
+                        // Go to substackapi.com to unlock custom redirect
+
+                    };
+                    </script>
+                    <script src="https://substackapi.com/widget.js" async></script>
+                    <p>To comment, download the app here.</p>
+                </div>                
+            </section><!--END OF NEWSLETTER SECTION-->
+
+            <div id="events" class="divider hidden" >
+                <div class="divider-header hidden">
+                    <img src="images/shows-div.jpg">
+                    <div class="divider-title">
+                        <h2>Events</h2>
+                    </div>
+                </div>
+            </div>
+            <section class="events">
+                <h2>There are currently no upcoming events</h2>
+                <p onclick="scrollToSection('mailing-list')">Sign up to the <a href="#mailing-list">newsletter</a> for the latest news.</p>
+            </section><!--END OF EVENTS SECTION-->
+
+            <div id="contact" class="divider hidden" >
+                <div class="divider-header hidden">
+                    <img src="images/contact.jpg">
+                    <div class="divider-title">
+                        <h2>Contact</h2>
+                    </div>
+                </div>
+            </div>
+            <section class="contact">
+                    <img src="images/logo-colour.png">
+                    <h2>Hello!</h2>
+                    <p>You can contact me via my email<br />chris[at]hafrenmusic.com</p>
+            </section>
+
+        </main>
+        <footer>
+            <div class="socials">
+                <a href="https://www.facebook.com/hafrenmusic" target="_blank">
+                    <img src="images/socials/fb2.png">
+                </a>
+                <a href="https://www.instagram.com/hafrenmusic/" target="_blank">
+                    <img src="images/socials/insta.png">
+                </a>
+                <a href="https://www.youtube.com/@hafrenmusic" target="_blank">
+                    <img src="images/socials/yt.png">
+                </a>
+                <a href="https://twitter.com/HafrenMusic">
+                    <img src="images/socials/x.png">
+                </a>
+                <a href="mailto:chris@hafrenmusic.com" target="_blank">
+                    <img src="images/socials/email.png">
+                </a>
+            </div>
+            <div class="copyright">
+                <p>Copyright 2023</p>
+            </div>
+        </footer>
+    </body>
+</html>
